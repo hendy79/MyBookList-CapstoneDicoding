@@ -26,6 +26,20 @@ jobs:
     - name: Run Build
       run: ./gradlew build
 
+    - store_artifacts:
+        path: app/build/reports
+        destination: reports
+
     - name: Run Tests
       run: ./gradlew lint test
 
+    - run:
+        name: Run Tests
+        command: ./gradlew lint test
+
+    - store_test_results:
+        path: app/build/test-results
+
+    - store_artifacts:
+        path: app/build/outputs/apk/debug/
+        destination: artifact-file
