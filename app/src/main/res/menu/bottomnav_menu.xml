@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigationHome"
+        android:icon="@drawable/baseline_house_24"
+        android:title="@string/home"/>
+
+    <item
+        android:id="@+id/navigationFavorite"
+        android:icon="@drawable/baseline_list_24"
+        android:title="@string/favorite"/>
+</menu>
