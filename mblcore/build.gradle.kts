@@ -22,20 +22,20 @@ android {
         buildConfig = true
     }
     buildTypes {
-        /*
-        val p = `java.util`.Properties()
-        p.load(project.rootProject.file("local.properties").reader())
-        val urlApi: String = p.getProperty("URL_API")
-        val keyRoom: String = p.getProperty("KEY_ROOM")
-         */
-        val urlApi = "https://www.googleapis.com/books/v1/"
-        val keyRoom = "y_book_list-dbkey"
         release {
             isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            /*
+            val p = `java.util`.Properties()
+            p.load(project.rootProject.file("local.properties").reader())
+            val urlApi: String = p.getProperty("URL_API")
+            val keyRoom: String = p.getProperty("KEY_ROOM")
+             */
+            val urlApi = "https://www.googleapis.com/books/v1/"
+            val keyRoom = "y_book_list-dbkey"
             buildConfigField("String", "URL_API", "\"$urlApi\"")
             buildConfigField("String", "KEY_ROOM", "\"$keyRoom\"")
         }
@@ -45,6 +45,14 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            /*
+            val p = `java.util`.Properties()
+            p.load(project.rootProject.file("local.properties").reader())
+            val urlApi: String = p.getProperty("URL_API")
+            val keyRoom: String = p.getProperty("KEY_ROOM")
+             */
+            val urlApi = "https://www.googleapis.com/books/v1/"
+            val keyRoom = "y_book_list-dbkey"
             buildConfigField("String", "URL_API", "\"$urlApi\"")
             buildConfigField("String", "KEY_ROOM", "\"$keyRoom\"")
         }
